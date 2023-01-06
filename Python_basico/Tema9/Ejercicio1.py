@@ -2,5 +2,9 @@
 
 #Primero creamos la variable solicitando al usuario los países.
 usuario = input("Introduce el nombre de 5 países separados por comas: ")
+
+#A continuación, generamos la lista de países
 paises = [pais for pais in usuario.split(",")]
+
+#Por último, usando la función set y sorted indicamos la ordenación alfabética y la no repetición de los elementos.
 print(",".join(sorted(list(set(paises)))))
